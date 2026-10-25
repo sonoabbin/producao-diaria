@@ -46,6 +46,15 @@ def add(args):
     if args.tipo not in TIPOS:
         raise SystemExit(f"tipo invalido: {args.tipo}. use: {', '.join(TIPOS)}")
     itens = ler()
+    # o ledger vai para repositorio publico: nunca guardar caminho absoluto do usuario
+    art = (args.artefato or "").replace("\\", "/").strip()
+    for pref in (BASE.replace("\\", "/") + "/", os.path.dirname(BASE).replace("\\", "/") + "/"):
+        if art.lower().startswith(pref.lower()):
+            art = art[len(pref):]
+            break
+    if re.match(r"^[A-Za-z]:/", art):
+        print(f"aviso: caminho absoluto descartado do artefato ({art[:24]}...)")
+        art = ""
     item = {
         "id": len(itens) + 1,
         "data": args.data or date.today().isoformat(),
@@ -53,7 +62,7 @@ def add(args):
         "tipo": args.tipo,
         "titulo": args.titulo.strip(),
         "resumo": " ".join(args.resumo.split()),
-        "artefato": args.artefato or "",
+        "artefato": art,
         "tags": [t.strip() for t in (args.tags or "").split(",") if t.strip()],
     }
     with open(LEDGER, "a", encoding="utf-8") as f:
