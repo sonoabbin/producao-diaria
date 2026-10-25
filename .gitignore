@@ -1,0 +1,6 @@
+# carga inicial do ledger, uso local
+_seed.py
+
+__pycache__/
+*.pyc
+.DS_Store

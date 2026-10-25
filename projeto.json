@@ -1,0 +1,17 @@
+{
+  "projeto": "producao-diaria",
+  "dono": "Abbin",
+  "criado": "2026-10-25",
+  "para_que_serve": "Historico de tudo que Abbin e o agente produzem com IA, dia por dia. Serve como prova real de trabalho para vaga de IA, e como base para LinkedIn/GitHub.",
+  "como_alimentar": [
+    "A cada sessao relevante: python registro.py add --titulo '<curto>' --tipo codigo|decisao|projeto|duvida|estudo|entrega --resumo '<2 a 4 linhas do que saiu>' --artefato '<caminho ou URL>' --tags 'ia,automacao'",
+    "Ou simplesmente dizer ao agente: 'registra o dia'. Ele le a sessao e escreve.",
+    "python registro.py index   -> regenera o index.html",
+    "python registro.py stats   -> resumo no terminal"
+  ],
+  "arquivos": {
+    "ledger.jsonl": "uma linha JSON por producao do dia",
+    "YYYY-MM-DD.md": "diario narrativo do dia (o que decidi, o que travou, o que aprendi)",
+    "index.html": "painel visual do historico"
+  }
+}

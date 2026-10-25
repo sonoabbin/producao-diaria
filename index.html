@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Produção diária — Abbin</title>
+<style>
+  *{box-sizing:border-box}
+  body{margin:0;font:15px/1.55 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+       color:var(--foreground,#e6e8eb);background:transparent;padding:22px 24px 40px}
+  header{border-bottom:1px solid var(--border,#2a2f38);padding-bottom:16px;margin-bottom:22px}
+  h1{margin:0 0 4px;font-size:21px;letter-spacing:-.2px}
+  .sub{color:var(--muted-foreground,#98a2b3);font-size:13px}
+  .bar{display:flex;flex-wrap:wrap;gap:26px;margin:18px 0 8px}
+  .kpi{display:flex;flex-direction:column;font-size:12px;color:var(--muted-foreground,#98a2b3)}
+  .kpi b{font-size:24px;line-height:1.1;font-variant-numeric:tabular-nums}
+  .tagsbar{display:flex;flex-wrap:wrap;gap:6px;margin:14px 0 0}
+  .tag{font-size:11px;border:1px solid var(--border,#2a2f38);border-radius:20px;padding:2px 9px;
+        color:var(--muted-foreground,#98a2b3)}
+  .tag i{font-style:normal;opacity:.6;margin-left:6px}
+  section{margin:26px 0 0}
+  h2{font-size:14px;letter-spacing:.4px;text-transform:uppercase;margin:0 0 10px;
+      color:var(--muted-foreground,#98a2b3);display:flex;gap:10px;align-items:baseline}
+  h2 small{font-size:11px;text-transform:none;letter-spacing:0;opacity:.65}
+  ul{list-style:none;margin:0;padding:0}
+  li{position:relative;border-left:2px solid var(--c,#333);padding:2px 0 16px 16px;margin-left:3px}
+  li:last-child{padding-bottom:0}
+  .head{display:flex;gap:9px;align-items:baseline;flex-wrap:wrap}
+  .head b{font-size:14.5px;font-weight:600}
+  .badge{font-size:10px;letter-spacing:.5px;text-transform:uppercase;color:var(--c);
+          border:1px solid color-mix(in srgb,var(--c) 45%,transparent);border-radius:4px;padding:1px 6px}
+  .hora{font-size:11px;color:var(--muted-foreground,#98a2b3);margin-left:auto;font-variant-numeric:tabular-nums}
+  li p{margin:5px 0 0;font-size:13.5px;color:var(--foreground,#e6e8eb);opacity:.88;max-width:88ch}
+  .art{font-size:11.5px;color:var(--muted-foreground,#98a2b3);margin-top:5px;
+        font-family:ui-monospace,SFMono-Regular,Consolas,monospace;word-break:break-all}
+  .tags{margin-top:6px;display:flex;gap:6px;flex-wrap:wrap}
+  .t{font-size:10.5px;color:var(--accent,#7dd3fc);opacity:.8}
+  footer{margin-top:34px;padding-top:14px;border-top:1px solid var(--border,#2a2f38);
+          font-size:11.5px;color:var(--muted-foreground,#98a2b3)}
+  .vazio{color:var(--muted-foreground,#98a2b3);font-size:13px}
+</style></head><body>
+<header>
+  <h1>Produção diária</h1>
+  <div class="sub">Abbin + Hermes · histórico de trabalho com IA · atualizado 26/10/2026 00:08</div>
+  <div class="bar">
+    <div class="kpi"><b>12</b><span>registros</span></div>
+    <div class="kpi"><b>6</b><span>dias ativos</span></div>
+    <div class="kpi"><b>21/10 → 26/10</b><span>período</span></div>
+    <div class="kpi"><b style="color:#22d3ee">3</b><span>Código</span></div><div class="kpi"><b style="color:#f472b6">3</b><span>Entrega</span></div><div class="kpi"><b style="color:#a78bfa">3</b><span>Decisão</span></div><div class="kpi"><b style="color:#34d399">2</b><span>Projeto</span></div><div class="kpi"><b style="color:#60a5fa">1</b><span>Estudo</span></div>
+  </div>
+  <div class="tagsbar"><span class="tag">painel<i>2</i></span><span class="tag">carreira<i>2</i></span><span class="tag">ia<i>2</i></span><span class="tag">perfil<i>2</i></span><span class="tag">html<i>1</i></span><span class="tag">validacao<i>1</i></span><span class="tag">linkedin<i>1</i></span><span class="tag">github<i>1</i></span><span class="tag">setup<i>1</i></span><span class="tag">estrategia<i>1</i></span><span class="tag">registro<i>1</i></span><span class="tag">processo<i>1</i></span><span class="tag">decisao<i>1</i></span><span class="tag">pipeline<i>1</i></span></div>
+</header>
+<section><h2>2026-10-26<small>2 registros</small></h2><ul><li style="--c:#22d3ee"><div class="head"><span class="badge">Código</span><b>Painel de produção diária validado no navegador</b><span class="hora">00:03</span></div><p>Conferido com render real: KPIs, badges por tipo, timeline agrupada por data. Corrigido o periodo que aparecia como texto longo e os tracinhos vazios de hora em itens retroativos.</p><div class="art">↳ reports/producao-diaria/index.html</div><div class="tags"><span class="t">#painel</span><span class="t">#html</span><span class="t">#validacao</span></div></li><li style="--c:#f472b6"><div class="head"><span class="badge">Entrega</span><b>LinkedIn reposicionado para vaga em IA</b><span class="hora">00:03</span></div><p>Headline, texto de Sobre, descricao de experiencia e lista de competencias escritos a partir do dossie real. Inclui a lacuna declarada (sem formacao em ML) e as 5 provas que faltam, com o GitHub vazio como prioridade.</p><div class="art">↳ reports/perfil-abbin/2026-10-26/linkedin-vaga-ia.md</div><div class="tags"><span class="t">#linkedin</span><span class="t">#carreira</span><span class="t">#ia</span><span class="t">#perfil</span></div></li></ul></section><section><h2>2026-10-25<small>3 registros</small></h2><ul><li style="--c:#22d3ee"><div class="head"><span class="badge">Código</span><b>GitHub conectado por linha de comando</b></div><p>gh 2.103.2 instalado via winget e autenticado na conta sonoabbin, aproveitando o token que ja estava no Gerenciador de Credenciais do Windows. Auth verificada e API respondendo.</p><div class="tags"><span class="t">#github</span><span class="t">#setup</span></div></li><li style="--c:#a78bfa"><div class="head"><span class="badge">Decisão</span><b>Decisao: buscar vaga de trabalho em IA</b></div><p>Objetivo definido: entrar no mercado de IA. Estrategia: construir prova publica datada (este ledger) em vez de lista de tecnologias no curriculo.</p><div class="tags"><span class="t">#carreira</span><span class="t">#ia</span><span class="t">#estrategia</span></div></li><li style="--c:#f472b6"><div class="head"><span class="badge">Entrega</span><b>Criado o registro de producao diaria</b></div><p>Pastas, CLI (registro.py add/index/stats), ledger.jsonl e painel HTML. Alimentado a mao ou por rotina diaria do agente.</p><div class="art">↳ reports/producao-diaria</div><div class="tags"><span class="t">#registro</span><span class="t">#painel</span><span class="t">#processo</span></div></li></ul></section><section><h2>2026-10-24<small>2 registros</small></h2><ul><li style="--c:#a78bfa"><div class="head"><span class="badge">Decisão</span><b>Frente escolhida: recrutamento de lusofonos por comissao</b></div><p>Depois de 7 frentes abertas, escolhida a de recrutar lusofonos por fee de introducao. Estado e pendencias documentados.</p><div class="art">↳ reports/recrutamento-lusofonos/2026-10-24/ESTADO.md</div><div class="tags"><span class="t">#decisao</span><span class="t">#pipeline</span><span class="t">#b2b</span></div></li><li style="--c:#34d399"><div class="head"><span class="badge">Projeto</span><b>Dossie de contexto do Abbin consolidado</b></div><p>Documento unico com historia, negocios (Costura Original, Abbin, Modelly, Topsancas), ativos e restricoes operacionais.</p><div class="art">↳ reports/perfil-abbin/2026-10-24/dossie-contexto-abbin.md</div><div class="tags"><span class="t">#contexto</span><span class="t">#perfil</span></div></li></ul></section><section><h2>2026-10-23<small>1 registro</small></h2><ul><li style="--c:#60a5fa"><div class="head"><span class="badge">Estudo</span><b>Frente de imoveis tokenizados mapeada</b></div><p>Levantamento de oportunidades e riscos de tokenizacao de imoveis em Curitiba, com tese e proximos passos.</p><div class="art">↳ reports/imoveis-tokenizados/2026-10-23</div><div class="tags"><span class="t">#pesquisa</span><span class="t">#cripto</span><span class="t">#mercado</span></div></li></ul></section><section><h2>2026-10-22<small>1 registro</small></h2><ul><li style="--c:#22d3ee"><div class="head"><span class="badge">Código</span><b>Gateway Signal proprio rodando no Windows</b></div><p>signal-cli 0.14.7 + JRE 25 em AppData/Local/hermes/tools/signal, daemon em 127.0.0.1:8080, numero dedicado como HermesAgent.</p><div class="tags"><span class="t">#signal</span><span class="t">#integracao</span><span class="t">#windows</span></div></li></ul></section><section><h2>2026-10-21<small>3 registros</small></h2><ul><li style="--c:#34d399"><div class="head"><span class="badge">Projeto</span><b>Monitoramento do @thekoerneroffice no ar</b></div><p>Pipeline proprio em tko-bot: dossiers, analysis e reports, venv separado e cron semanal (segunda 9h) via scripts/tko_sync.sh.</p><div class="art">↳ C:/Users/wabbi/tko-bot</div><div class="tags"><span class="t">#automacao</span><span class="t">#monitoramento</span><span class="t">#cron</span></div></li><li style="--c:#f472b6"><div class="head"><span class="badge">Entrega</span><b>Auditoria SEO do site da cliente Serena Lana</b></div><p>Site Zyro de needle felting, catalogo EUR 9-250, cliente na Europa. Auditoria de SEO e lista de correcoes priorizadas.</p><div class="art">↳ reports/serena-lana</div><div class="tags"><span class="t">#seo</span><span class="t">#cliente</span><span class="t">#ecommerce</span></div></li><li style="--c:#a78bfa"><div class="head"><span class="badge">Decisão</span><b>Dominio costuraoriginal.com.br garantido</b></div><p>Compra confirmada em 21/10/2026, renovacao 21/10/2027 e aviso agendado para 21/09/2027. .com e .net.br sao de terceiros.</p><div class="tags"><span class="t">#dominio</span><span class="t">#costura-original</span></div></li></ul></section>
+<footer>Fonte: ledger.jsonl · <code>python registro.py index</code> regenera este painel</footer>
+</body></html>
